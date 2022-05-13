@@ -22,6 +22,11 @@ font-family: var(--primaly-font-family);
 line-height: 1.71;
 }
 
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
 .list{
 list-style: none;
 padding: 0;
@@ -37,7 +42,7 @@ width: 1200px;
 margin: 0 auto;
 }
 
-h3, h2{
+h1, h2, h3{
 margin: 0;
 }
 
@@ -50,7 +55,8 @@ border: 1px solid var(--line-color);
 margin: 0;   
 }
 
-/*logo*/
+/*-------LOGO------*/
+
 .logo {
 color: var(--main-color);
 font-family: var(--secondary-font-family);
@@ -64,6 +70,8 @@ margin-right: 93px;
 .blue-color {
 color: var(--accent-color);
 }
+
+/*---------HEADER---------*/
 
 .header{
 max-width: 1600px;
@@ -83,15 +91,32 @@ display: inline-block;
 margin-right: 50px;
 }
 
-/*hero*/
+/*------TITLES FOR MAIN PAGE--------*/
+
+.section-title{
+font-size: 36px;
+line-height: 1.16;
+color: var(--main-color);
+text-align: center;
+margin-bottom: 50px;
+}
+
+/*---------HERO--------*/
+
 .hero{
 background-color: var(--box-color);
 max-width: 1600px;
-text-align: center;
-padding: 200px 452px 280px 452px;
-margin-bottom: 94px;
+height: 600px;
 margin-right: auto;
 margin-left: auto;
+text-align: center;
+display: flex;
+}
+
+.hero-flex{
+margin: auto;
+align-items: center;
+justify-content: center;
 }
 
 .hero-title{
@@ -103,10 +128,10 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 margin-bottom: 30px;
-margin-top: 0;
 }
 
-/*button studio*/
+/*------BUTTON HERO-----*/
+
 .button {
 background-color: var(--accent-color);
 color: var(--bckground-color);
@@ -115,20 +140,19 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 cursor: pointer;
+text-align: center;
 
-border-radius: 4px transparent;
+border-radius: 4px;
 border-style: hidden;
 padding: 10px 32px;
-width: 200px;
-height: 50px;
+min-width: 200px;
 }
 
-/*benefits*/
+/*------BENEFITS-------*/
 
 .benefits-list{
 display: flex;
 justify-content: space-between;
-margin-bottom: 94px;
 }
 
 .section-item{
@@ -149,25 +173,17 @@ color: var(--contact-color);
 width: 270px;
 }
 
-.section-title{
-font-size: 36px;
-line-height: 1.16;
-color: var(--main-color);
-text-align: center;
-margin-bottom: 50px;
-}
+/*------PHOTO LIST-----*/
 
 .photo-list{
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 94px;
 }
 
-/*team*/
+/*--------TEAM-------*/
+
 .team-color{
-padding-top: 94px;
-padding-bottom: 94px;
 background-color: var(--btn-bg-color);
 max-width: 1600px;
 }
@@ -203,8 +219,8 @@ color: var(--contact-color);
 padding-bottom: 30px;
 }
 
+/*----------lINKS----------*/
 
-/*links*/
 .nav-link,
 .adress-link {
 font-weight: 500;
@@ -232,6 +248,8 @@ font-weight: 400;
 color: var(--bot-adress-color);
 }
 
+/*--------H1 PORTFOLIO--------*/
+
 .visually-hidden {
 position: absolute;
 white-space: nowrap;
@@ -246,10 +264,12 @@ margin: -1px;
 }
 
 .portfolio{
-padding: 94px 0 94px 0;
+margin-right: auto;
+margin-left: auto;
 }
 
-/*buttons*/
+/*------------BUTTONS PORTFOLIO--------*/
+
 .btn{
 display: flex;
 justify-content: center;
@@ -260,14 +280,11 @@ margin-right: 8px;
 }
 
 .portfolio-btn{
-border-radius: 4px transparent;
+border-radius: 4px;
 border-style: hidden;
 padding: 6px 22px;
-min-width: 73px;
 text-align: center;
-height: 38px;
-min-width: 73px;
-margin: 0;
+margin-bottom: 50px;
 cursor: pointer;
 }
 
@@ -279,19 +296,16 @@ color: var(--btn-bg-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*cards*/
+/*-------------CARDS--------------*/
+
 .cards{
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 50px;
+gap: 30px;
 }
 
 .card-item{
-width: 370px;
-margin-bottom: 30px;
-margin-right: 0;
-border: 1px solid var(--border-card-color);
+width: calc((100% - 90px) / 3);
 }
 
 .card-title{
@@ -299,7 +313,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--main-color);
-margin: 20px 24px 4px 24px;
+margin-bottom: 4px;
 }
 
 .card-text{
@@ -307,10 +321,19 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--contact-color);
-margin: 0 24px 20px 24px;
 }
 
-/*footer*/
+.card-image{
+display: block;
+}
+
+.card-border{
+border: 1px solid var(--border-card-color);
+padding: 20px 24px;
+}
+
+/*-------------FOOTER----------------*/
+
 .footer{
 background-color: var(--box-color);
 margin-top: 0px;
