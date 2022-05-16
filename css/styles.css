@@ -55,6 +55,19 @@ border: 1px solid var(--line-color);
 margin: 0;   
 }
 
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
 /*-------LOGO------*/
 
 .logo {
@@ -247,21 +260,6 @@ font-weight: 400;
 font-style: normal;
 font-weight: 400;
 color: var(--bot-adress-color);
-}
-
-/*--------H1 PORTFOLIO--------*/
-
-.visually-hidden {
-position: absolute;
-white-space: nowrap;
-width: 1px;
-height: 1px;
-overflow: hidden;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-clip-path: inset(50%);
-margin: -1px;
 }
 
 .portfolio{
